@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Response Desk · Aditya Pawade</title>
+<meta name="description" content="Try a customer enquiry and complaint workflow: case ownership, response history, Excel intake and clear handovers. An interactive prototype by Aditya Pawade.">
+<link rel="canonical" href="https://adiai.si/customer-response-desk.html">
+<link rel="stylesheet" href="assets/desk.css">
+<script src="assets/vendor/xlsx.full.min.js" defer></script>
+<script src="assets/desk-core.js" defer></script>
+<script src="assets/desk-ui.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar"><a class="brand" href="index.html">ADITYA<span>.</span></a><div class="app-mark" aria-hidden="true">↗</div><p class="app-name">Customer<br>Response Desk</p><p class="side-caption">Every case has a next step.</p><nav aria-label="Desk navigation"><button data-view="today" class="nav-item active">Today <span id="open-count">6</span></button><button data-view="add" class="nav-item">Add a case <span>＋</span></button><button data-view="import" class="nav-item">Import &amp; review <span>↓</span></button><button data-view="handover" class="nav-item">Team handover <span>↗</span></button></nav><div class="side-bottom"><span class="prototype-dot"></span> Interactive prototype<br><a href="index.html#work">← Back to portfolio</a></div></aside>
+<main><div class="demo-banner"><span>Prototype · fictional sample cases</span><span>Changes reset on reload. Files stay in your browser.</span><button id="reset-demo">Reset demo</button></div><div id="notice" role="status" aria-live="polite" hidden></div><div id="screen"></div><footer>Built by Aditya Pawade · Enquiries, complaints &amp; fewer missed follow-ups.<p style="margin-top:12px"><a href="customer-response-pilot.html">Private team pilot sign-in ↗</a> · <a href="assets/customer-response-desk-source.zip" download>Download project source ↓</a></p><details><summary>About this prototype</summary><p>This demo stores changes only in page memory. It has no shared database, login, reminders or email sending. Copying a draft does not send it. “Record sent” documents a message sent elsewhere. Excel files are parsed locally; downloads contain the selected cases. Use fictional data to explore the workflow. Spreadsheet parsing: <a href="assets/vendor/sheetjs-LICENSE.txt">SheetJS CE licence</a>.</p></details></footer></main>
+</div>
+<noscript><p>Enable JavaScript to try this interactive prototype.</p></noscript>
+</body></html>
