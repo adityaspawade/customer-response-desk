@@ -1,0 +1,12 @@
+{
+  "name": "customer-response-desk",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Customer enquiry and complaint follow-ups with Excel intake and an optional private team pilot",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/desk.test.cjs tests/desk-cloud.test.cjs",
+    "check": "node --check dist/assets/desk-core.js && node --check dist/assets/desk-cloud.js && node --check dist/assets/desk-ui.js"
+  },
+  "engines": { "node": ">=20" }
+}
