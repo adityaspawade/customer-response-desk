@@ -2,7 +2,7 @@
 
 A small-team workspace for customer enquiries, complaints and follow-ups. Built by Aditya Pawade.
 
-[Public demo](https://adiai.si/customer-response-desk.html) · [Portfolio](https://adiai.si)
+[Public demo](https://adiai.si/customer-response-desk.html) · [Case study](https://adiai.si/customer-response-case-study.html) · [Demo guide](https://adiai.si/customer-response-guide.html) · [Portfolio](https://adiai.si)
 
 Version 0.2.0 · MIT licensed · Original app code by Aditya Pawade.
 
@@ -56,7 +56,11 @@ Or run `npm run check && npm test` with Node 20 or newer. No npm dependency inst
 
 `tests/desk-access.sql` verifies the actual database access model, reference uniqueness, stale updates, immutable history and immediate access revocation. It uses fictional Auth/table fixtures in a transaction and rolls back. Run only against a dedicated development/pilot database with administrator access; it expects an otherwise empty case queue.
 
-Automated database/HTTP checks passed for the hosted pilot. Browser sign-in end-to-end and phone rendering have not yet been verified. This is a pilot, not an audited production support system.
+For the hosted pilot, the owner completed sign-in, fictional case creation and a second-browser note update. A read-only database check on 17 October 2026 confirmed one case and two revision records, including that note. Phone and Excel checks were reported complete by the owner; they were not independently inspected. Automated database/HTTP checks also passed. An independent team trial and operational retention/backup decisions remain before use with real customer data.
+
+## Try the workflow with a team
+
+Follow [the guided demo](docs/customer-response-walkthrough.md), then use [the fictional team trial kit](docs/customer-response-trial-kit.md). It includes two tester roles, 12 scenarios, expected results, a feedback template and trial exit criteria. No independent team trial or measured business impact is claimed.
 
 ## Dependencies and licence
 
